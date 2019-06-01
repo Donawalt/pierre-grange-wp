@@ -1,0 +1,211 @@
+/*
+Theme Name: Pierre Grange v1
+Theme URI: https://donaelwalter.com/
+Author: Donaël WALTER, Brice Girard
+Author URI: https://donaelwalter.com/
+Description: Student work
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: PierreGrangeV1
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Real code */
+header{
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+	position: fixed;
+	background-color: white;
+	z-index: 1000;
+}
+header > #logo {
+  height: 15px;
+  margin-left: 20px;
+}
+header>nav {
+  margin-right: 20px;
+}
+header>a{
+  color: Black;
+}
+
+.content{
+  min-height: 80vh;
+  width: 80vw;
+  margin: auto;
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+/***** Page d'Acceuil *****/
+.POST-GRID{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.post-thumbnail{
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.post-thumbnail> a {
+	height: 100%;
+	width: 100%;
+}
+
+.post-thumbnail img {
+	position: absolute;
+	height: 200%;
+	width: 200%;
+	left: -50%;
+	top: -50%;
+}
+
+.post-title{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.post-title >a{
+	width: 100%;
+	font-family: sans-serif;
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+	weight: bold;
+}
+/*****Formulaire*****/
+ol.forms { float: left; list-style: none; margin: 10; width: 100%; }
+
+ol.forms li {
+	clear: both;
+	float: left;
+	margin-bottom: 18px;
+	position: relative;
+	width: 100%;
+}
+
+ol.forms label {
+	padding-right: 20px;
+	width: 100px;
+}
+
+ol.forms input, ol.forms textarea {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8E9BA9;
+    padding: 5px;
+    width:400px;
+}
+
+ol.forms input:hover, ol.forms textarea:hover {
+	background: none repeat scroll 0 0 #eeecec;
+    border: 1px solid #8E9BA9;
+    padding: 5px;
+    width:400px;
+}
+
+ol.forms textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8E9BA9;
+    padding: 5px;
+    width:400px;
+    height:200px;
+}
+
+ol.forms textarea:hover {
+    background: none repeat scroll 0 0 #eeecec;
+    border: 1px solid #8E9BA9;
+    padding: 5px;
+    width:400px;
+}
+
+ol.forms li.screenReader { margin-bottom: 0; }
+
+ol.forms li.buttons button {
+	background-color: #F9F9F9;
+    border: 1px solid #8E9BA9;
+    width: 60px;
+    height: 30px;
+}
+
+ol.forms li.buttons button:hover {
+    background-color: #eeecec;
+    border: 1px solid #8E9BA9;
+}
+
+ol.forms li.inline input { width: auto; }
+
+ol.forms li.inline label {
+display: inline;
+float: none;
+width: auto;
+}
+/*****END Personnalisation du formulaire de contact *****/
+
+.single{
+	font-family: Roboto, sans-serif;
+	font-size: 24px;
+}
+
+.single p {
+	margin-bottom: 15px;
+}
+
+.entry-header{
+	text-transform: uppercase;
+}
