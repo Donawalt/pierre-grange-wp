@@ -209,3 +209,20 @@ width: auto;
 .entry-header{
 	text-transform: uppercase;
 }
+
+/*** Loader ***/
+.screen-splash {
+	position: fixed;
+	top: 0;
+	z-index: 100000;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.screen-splash svg {
+	width: 25vw;
+}
