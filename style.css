@@ -81,6 +81,36 @@ header>a{
   color: Black;
 }
 
+header #menu {
+	display: flex;
+}
+header .menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header #menu .menu ul li {
+	margin-right: 5px;
+}
+header #menu .menu ul .page_item a {
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+}
+header #menu #burger {
+	height:20px;
+	width: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-content: space-around;
+	overflow: hidden;
+}
+header #menu #burger div {
+	width: 60px;
+	height: 2px;
+	background-color: black;
+}
 .content{
   min-height: 80vh;
   width: 80vw;

@@ -17,6 +17,12 @@
           <?php get_search_form(); ?>
         </div> -->
         <nav id="menu">
-          <?php wp_nav_menu(array('theme_location' => 'menu_principal')); ?> <!-- importer le menu -->
+          <?php wp_nav_menu(array('theme_location' => 'menu_principal')); ?>
+          <!-- importer le menu -->
+          <div id="burger">
+            <div id="b-1"></div>
+            <div id="b-2"></div>
+            <div id="b-3"></div>
+          </div>
         </nav>
       </header>
