@@ -70,7 +70,7 @@ header{
 	background-color: white;
 	z-index: 1000;
 }
-header > #logo {
+header  #logo {
   height: 15px;
   margin-left: 20px;
 }
@@ -84,20 +84,24 @@ header>a{
 header #menu {
 	display: flex;
 }
+
 header .menu {
+	display: flex;
+}
+header .menu-item div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-header #menu .menu ul li {
+header #menu .menu-item ul li {
 	margin-right: 5px;
 }
-header #menu .menu ul .page_item a {
+header #menu .menu-item  a {
 	text-decoration: none;
 	color: black;
 	font-family: sans-serif;
 }
-header #menu #burger {
+header #menu #burger, header #menu #cross {
 	height:20px;
 	width: 20px;
 	display: flex;
@@ -160,71 +164,10 @@ header #menu #burger div {
 	weight: bold;
 }
 /*****Formulaire*****/
-ol.forms { float: left; list-style: none; margin: 10; width: 100%; }
-
-ol.forms li {
-	clear: both;
-	float: left;
-	margin-bottom: 18px;
-	position: relative;
-	width: 100%;
-}
-
-ol.forms label {
-	padding-right: 20px;
-	width: 100px;
-}
-
-ol.forms input, ol.forms textarea {
-	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #8E9BA9;
-    padding: 5px;
-    width:400px;
-}
-
-ol.forms input:hover, ol.forms textarea:hover {
-	background: none repeat scroll 0 0 #eeecec;
-    border: 1px solid #8E9BA9;
-    padding: 5px;
-    width:400px;
-}
-
-ol.forms textarea {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #8E9BA9;
-    padding: 5px;
-    width:400px;
-    height:200px;
-}
-
-ol.forms textarea:hover {
-    background: none repeat scroll 0 0 #eeecec;
-    border: 1px solid #8E9BA9;
-    padding: 5px;
-    width:400px;
-}
-
-ol.forms li.screenReader { margin-bottom: 0; }
-
-ol.forms li.buttons button {
-	background-color: #F9F9F9;
-    border: 1px solid #8E9BA9;
-    width: 60px;
-    height: 30px;
-}
-
-ol.forms li.buttons button:hover {
-    background-color: #eeecec;
-    border: 1px solid #8E9BA9;
-}
-
-ol.forms li.inline input { width: auto; }
-
-ol.forms li.inline label {
-display: inline;
-float: none;
-width: auto;
-}
+.wpforms-container{
+	justify-content: center;
+	display: flex;
+	width: 70%!important;}
 /*****END Personnalisation du formulaire de contact *****/
 
 .single{
