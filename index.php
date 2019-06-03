@@ -25,7 +25,7 @@ Il n'y a pas de Post à afficher !
         var myVar;
 
         function myFunction() {
-            myVar = setTimeout(showPage, 4000);
+            myVar = setTimeout(showPage, 3000);
         }
 
         function showPage() {
