@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="content">
+<section class="content article">
 
        <?php
        // Start the loop.

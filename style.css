@@ -119,8 +119,38 @@ header #menu #burger div {
   min-height: 80vh;
   width: 80vw;
   margin: auto;
-	padding-top: 100px;
+	padding-top: 110px;
 	margin-bottom: 100px;
+	font-family: sans-serif;
+}
+
+/**** Article de blog ****/
+.article article{
+	font-family: sans-serif;
+}
+
+.article strong {
+	font-weight: bold;
+}
+
+.article em {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.article article .pierre-grange-colonne div:nth-child(2n){
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.article article .entry-title {
+	font-size: 30px;
+width: 50%;
+margin-right: 0px;
+margin-left: 50%;
+padding-left: 32px;
+margin-bottom: 40px;
 }
 /***** Page d'Acceuil *****/
 .POST-GRID{
